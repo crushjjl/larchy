@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/order.css">
+</head>
+<body>
+	<!-- header -->
+	<header id="order_header"></header>
+	<!-- content -->
+	<section>
+		<div class="order_content">
+			<div class="order_content_title">
+				<h1>填写并核对信息</h1>
+			</div>
+			<div class="order_receiver_info">
+				<h2>收货人信息</h2>
+				<div class="order_receiver_info_list">
+					<div class="order_receiver_name">
+						<label for="username"><span>*</span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
+						<input type="text" id="receiver_name" name="">
+					</div>
+					<div class="order_receiver_phone">
+						<label for="telephone"><span>*</span>手机号码:</label>
+						<input type="text" id="receiver_tel" name="">
+					</div>
+					<div class="order_receiver_address">
+						<label for="place"><span>*</span>配送地址:</label>
+						<div class="address_info" id="distpicker" data-toggle="distpicker">
+							<select data-province="----省----" class="select_province"></select>
+							<select data-city="----市----" class="select_city"></select>
+							<select data-district="----区----" class="select_district"></select>
+						</div>
+					</div>
+					<div class="order_receiver_detailAddress">
+						<label for="detailPlace"><span>*</span>详细地址:</label>
+						<input type="text" id="user_rece_address" name="">
+					</div>
+					<div class="order_remarks">
+						<label for="order_remarks_title"><span>*</span>订单备注:</label>
+						<textarea name="oder_remarks_txt" id="user_order_remarks" rows="6" cols="60"></textarea>
+					</div>
+					<div class="save_receiver_info">
+						<a href="" title="" class="confirm_receiver_info">确认信息</a>
+						<a href="" title="" class="cancel_save_info">取消</a>
+					</div>
+				</div>
+			</div>
+			<div class="order_merchbill">
+				<div class="order_merchbill_title">
+					<h1>商品信息</h1>
+				</div>
+				<div class="cart_content_items">
+					<ul class="car_content_items_list">
+						<li class="cart_items_check">
+							<input type="checkbox" id="all_check" name="" checked="checked">
+							<span class="all_select">全选</span>
+						</li>
+						<li class="car_items_goods"><span class="car_items_attr">商品</span></li>
+						<li><span class="car_items_id">编号</span></li>
+						<li><span class="car_items_price">单价(元)</span></li>
+						<li><span class="car_items_quantity">数量</span></li>
+						<li><span class="car_items_sun">小计(元)</span></li>
+						<li><span class="car_items_opera">操作</span></li>
+					</ul>
+				</div>
+				<div class="products_info">
+				</div>
+			</div>
+			<div class="order_result">
+				<a href="cart.html" title="" class="return_cart">返回购物车</a>
+				<span class="pay_amount">总计:<span class="pay_amount_money"></span></span>
+				<a href="#" title="" class="confirm_order">确认订单</a>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer id="order_footer"></footer>
+</body>
+<!-- js -->
+<script type="text/javascript" src="../lib/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../lib/distpicker/distpicker.data.min.js"></script>
+<script type="text/javascript" src="../lib/distpicker/distpicker.min.js"></script>
+<script type="text/javascript" src='../js/order.js'></script>
+</html>

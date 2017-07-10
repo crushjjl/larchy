@@ -1,0 +1,124 @@
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px 0;
+	.feedback_content_wrapper{
+		width: 100%;
+		height: 720px;
+		background: url('../images/advertiseImg/imgList (1).jpg') no-repeat;
+		background-size: cover;
+		.feedback_content{
+			width: 1200px;
+			height: 700px;
+			margin: 0 auto;
+			.feedback_content_title{
+				width: 1200px;
+				height: 66px;
+				margin: 0 auto;
+				line-height: 66px;
+				a{
+					font-size: 16px;
+					color: #2b2b2b;
+				}
+				a:hover{
+					color: #c81623;
+				}
+				.tip_arrow{
+					color: rgb(170, 170, 170);
+					margin: 0px 2px;
+				}
+			}
+			.feedback_msg{
+				width: 620px;
+				height: 600px;
+				border:1px solid #2b2b2b;
+				padding: 15px;
+				margin-top: 20px;
+				text-align: center;
+				overflow: hidden;
+				overflow-y: auto;
+				background: #fff;
+				.feedback_msg_title{
+			    	height: 50px;
+		    	    text-align: center;
+		    	    line-height: 50px;
+		    	    border-bottom: 2px solid #000;
+		    	    font-size: 24px;
+		    	    margin-bottom: 20px;
+		    	    font-family: '微软雅黑', Arial, Helvetica, sans-serif, '宋体';
+				}
+				.feedback_info{
+					width: 100%;
+					height: auto;
+					cursor: pointer;
+					overflow: hidden;
+					div{
+						width: auto;
+						height: auto;
+						margin: 15px 0 15px 35px;
+						text-align: left;
+						b{
+							color: red;
+						}
+						span{
+							font-size: 16px;
+							font-family: '微软雅黑', 'Arial', 'Helvetica', 'sans-serif', '宋体';
+						    color: #666;
+						    width: 80px;
+						    padding-right: 25px;
+					        display: inline-block;
+					        text-align: right;
+						}
+						input{
+							padding: 6px 103px;
+							height: 16px;
+							line-height: 16px;
+							color: #666;
+							border:1px solid #c7c7c7;
+							border-radius: 2px;
+						}
+					}
+					.msg_name{
+						padding-top: 20px;
+					}
+					.msg_remarks{
+						#msg_remarks{
+							vertical-align: top;
+						}
+					}
+					.msg_identify_code{
+						overflow: hidden;
+						position: relative;
+						#msg_identify_codeTxt{
+							padding: 6px 10px;
+							height: 16px;
+							line-height: 16px;
+							color: #666;
+							border:1px solid #c7c7c7;
+							border-radius: 2px;
+						}
+						.indentify_code_info{
+							position: absolute;
+							margin-left: 20px;
+						}
+					}
+					.msg_btn{
+						text-align: center;
+						padding: 15px 0;
+						#msg_submit{
+							width: 100px;
+							height: 30px;
+							text-align: center;
+							font-size: 16px;
+							margin: 10px;
+						}
+						#msg_reset{
+							@extend #msg_submit;
+						}
+					}
+				}
+			}
+		}
+	}
+}

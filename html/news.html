@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News Larchy</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/news.css">
+</head>
+<body>
+	<!-- header -->
+	<div id="news_header"></div>
+	<!-- content -->
+	<section>
+		<div class="news_content">
+				<div class="news_content_title">
+					<a href="../index.html" title="">HOME</a>
+					<span class="tip_arrow">/</span>
+					<a href="#" title="">News Larchy</a>
+				</div>
+				<div class="news_banner">
+					<img src="../images/newsImg/news_banner1.jpg" alt="news_banner" title="news_banner">
+				</div>
+				<div class="news_ad">
+					<dl>
+						<dt>
+							<a href="#" title=""><img src="../images/newsImg/news_ad (3).jpg" alt="new_ad" title="new_ad"></a>
+						</dt>
+						<dd>
+							<div class="news_ad_content">
+								<p class="news_ad_title">Larchy重磅赞助《爸爸的假期》</p>
+								<p class="news_ad_info">Larchy重磅赞助《爸爸的假期》大电影。电影是由王岳伦执导，郭涛、林志颖、 张亮、王岳伦、郭子睿、王诗龄、张悦轩、小小志等主演，田亮参与客串的喜剧电影。影片讲述一群人在到达韩国后，美好的帝王假期却因为国际大盗JIMMY LIN的出现而险象环生，上演了一场惊险刺激又笑料百出的...</p>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="news_nav">
+					<ul class="news_nav_list">
+					</ul>
+				</div>
+				<div class="news_page">
+					<ul class="news_page_nav">
+						<li><a href="#"><</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">></a></li>
+					</ul>
+				</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<div id="news_footer"></div>
+</body>
+<!-- js -->
+<script type="text/javascript" src='../lib/jquery/jquery-1.12.4.min.js'></script>
+<script type="text/javascript">
+	$(function(){
+		/* load header and footer to this introduce.html */
+		$("#news_header").load('header.html');
+		$("#news_footer").load('footer.html');
+		/* get datas from MySql news... */
+		var _html = "";
+		$.ajax({
+			url: '../php/news_get.php',
+			type: 'GET',
+			dataType: 'json'
+		})
+		.done(function(res) {
+			for (var i = 0; i < res.length; i++) {
+				var data = res[i];
+				// console.log(data);
+				_html += `<li><a href="#">${data.n_title}</a><span>[${data.n_sendtime}]</span><span class="news_list_id" style="display:none;">${data.n_id}</span></li>`;
+			}
+			$('.news_nav_list').append(_html);
+		})
+		.fail(function() {
+			console.log("error");
+		});
+		/*news click event*/
+		$('body').on('click', '.news_nav_list>li', function(event) {
+			event.preventDefault();
+			var news_id = $(this).find('.news_list_id').text();
+			if (!window.localStorage) {
+				alert("浏览器支持localStorage!")
+			} else {
+				console.log(news_id);
+				localStorage.news_id = news_id;
+				window.location = 'news_detail.html';
+			}
+		});
+	})
+</script>
+</html>

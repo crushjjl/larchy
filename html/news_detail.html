@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News Detail</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/news_detail.css">
+</head>
+<body>
+	<!-- header -->
+	<div id="newsDetail_header"></div>
+	<!-- content -->
+	<section>
+		<div class="newsDetail_content">
+			<div class="nd_content_title">
+				<a href="../index.html" title="">HOME</a>
+				<span class="tip_arrow">/</span>
+				<a href="#" title="">Larchy Times</a>
+			</div>
+			<div class="nd_content_info">
+				<div class="nd_content_info_title">
+					<h2 class="news_detail_name"></h2>
+					<p><span>——</span><span class="nd_send_time"></span></p>
+				</div>
+				<div class="nd_content_info_list">
+					<p class="nd_info_p1"></p>
+					<div class="nd_show_img">
+						<img src="../images/newsImg/news_ad (1).gif" alt="news_ad" title="news_ad">
+					</div>
+					<p class="nd_info_p2">其实，只要投资自己，你所投入的财富和时间，终将以对等甚至源源不断地回报与你。时光对待美人总是十分温柔。精致漂亮地生活，你就是女神！
+					</p>
+					<p class="nd_info_p3">如何精致漂亮地像艾玛沃森一样生活，至少你还缺一样东西——服装！服装就是是女人的另一种语音，她在告诉你，我很美。衣橱永远是个神奇的存在，每个女人都不可以少了它，它涵括了你所有的美。
+					</p>
+					<p class="nd_info_p4">一个人的穿衣风格能在很大程度上体现自己的精神面貌个性甚至人品。美丽是女人的终生事业，谁都想可以一直优雅地老去。那就先从适合寻找自己风格的衣服开始吧，Larchy女装，多一度取悦自己，风格简易而不简单，给你想要的，善待自己的外表也是疼爱自己的方式。一件精致的服装让你更加自信，这样完美的你难道不会爱上自己吗？
+					</p>
+					<div class="nd_show_img">
+						<img src="../images/newsImg/news_ad (1).jpg" alt="news_ad" title="news_ad">
+					</div>
+					<p class="nd_info_p5">深受时尚巨头老佛爷与女魔头宠爱的艾玛沃森，是美丽与智慧并肩的女神，凭借《哈利波特》红遍全球，却在事业的巅峰期进入美国常青藤校园，同时又致力于公益与环保。这就是艾玛沃森，她活出了最真实的自己！</p>
+					<p class="nd_info_p6">爱上自己，活出自己！从现在开始，做自己想要的。Larchy女装品牌，让你时刻宠爱自己，让你更加精致漂亮地生活。
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<div id="newsDetail_footer"></div>
+</body>
+<!-- js -->
+<script type="text/javascript" src='../lib/jquery/jquery-1.12.4.min.js'></script>
+<script type="text/javascript">
+	$(function(){
+		/* load header and footer to this news_detail.html */
+		$("#newsDetail_header").load('header.html');
+		$("#newsDetail_footer").load('footer.html');
+		/* get datas from MySql with news_id */
+		var news_id = localStorage.news_id;
+		console.log(news_id);
+		$.ajax({
+			url: '../php/news_detail.php',
+			type: 'GET',
+			dataType: 'json',
+			data: {'n_id': news_id}
+		})
+		.done(function(res) {
+			var n_data = res[0];
+			console.log(n_data);
+			$('.news_detail_name').text(n_data.n_title);
+			$('.nd_send_time').text(n_data.n_sendtime);
+			$('.nd_info_p1').text(n_data.n_content);
+		})
+		.fail(function() {
+			console.log("error");
+		});
+	})
+</script>
+</html>

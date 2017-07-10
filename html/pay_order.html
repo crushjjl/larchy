@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment_Order</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/pay_order.css">
+</head>
+<body>
+	<!-- header -->
+	<header id="payment_header"></header>
+	<!-- content -->
+	<section>
+		<div class="payment_content">
+			<div class="pay_order_status">
+				<img src="../images/wx_user (1).jpg" alt="weChat" title="weChat">
+				<div class="pay_order_tip">
+					<span>订单提交成功，请尽快付款！</span>
+					<p>请您在<span class="time24">24小时</span>内完成支付,支付金额以实际金额为准。</p>
+				</div>
+			</div>
+			<div class="payorder_info">
+			<h2>订单详情</h2>
+				<!-- <ul class="payorder_list">
+					<li><span>收货人:<span class="pay_receiver">蒋佳林</span></span></li>
+					<li><span>联系电话:<span class="receiver_tel">13657665390</span></span></li>
+					<li><span>收货地址:<span class="receiver_address">重庆市巴南区重庆理工大学</span></span></li>
+					<li><span>备注:<span class="receiver_remarks">顺丰快递，谢谢，顺丰快递，谢谢，顺丰快递，谢谢！</span></span></li>
+					<li>
+						<div class="pay_goods_info">
+							<span>商品名称:<span class="pay_goods_name">夏季新款小清新镂空蕾丝喇叭袖刺绣花朵T恤女上衣</span></span>
+						</div>
+					</li>
+					<li><span>应付金额:<span class="payment_money">223.00</span><em>元</em></span></li>
+				</ul> -->
+			</div>
+			<div class="payment_method">
+				<h2>支付方式</h2>
+				<ul class="payment_method_list">
+					<li>
+						<input type="checkbox" checked="checked" name=""><span>网银支付</span>
+					</li>
+					<li>
+						<input type="checkbox" name=""><span>微信支付</span>
+					</li>
+					<li>
+						<input type="checkbox" name=""><span>支付宝支付</span>
+					</li>
+					<li>
+						<input type="checkbox" name=""><span>银联支付</span>
+					</li>
+				</ul>
+			</div>
+			<div class="payment_btn_logo">
+				<a href="javascript:void(0);" title="" class="payment_btn">立即支付</a>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer id="payment_footer"></footer>
+</body>
+<!-- js -->
+<script type="text/javascript" src="../lib/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/* load header and footer to this html */
+		$('#payment_header').load('header.html');
+		$('#payment_footer').load('footer.html');
+		/*get datas from MySql with order and cart.*/
+		var username = localStorage.loginUsername,
+			_html = "";
+			$.ajax({
+				url: '../php/payment.php',
+				type: 'GET',
+				dataType: 'json',
+				data: {'o_c_user': username}
+			})
+			.done(function(res) {
+				for (var i = 0; i < res.length; i++) {
+					var datas = res[i];
+					// console.log(datas);
+					_html +=`
+					<ul class="payorder_list">
+					<li><span>收货人:<span class="pay_receiver">${datas.o_user}</span></span></li>
+					<li><span>联系电话:<span class="receiver_tel">${datas.o_user_tel}</span></span></li>
+					<li><span>收货地址:<span class="receiver_address">${datas.o_user_add}</span></span></li>
+					<li><span>备注:<span class="receiver_remarks">${datas.o_remarks}</span></span></li>
+					<li>
+						<div class="pay_goods_info">
+							<span>商品名称:<span class="pay_goods_name"></span></span>
+						</div>
+					</li>
+					<li><span>应付金额:<span class="payment_money">${datas.o_totalmoney}</span><em>元</em></span></li>
+				</ul>`;
+				}
+				$('.payorder_info').append(_html);
+				$.ajax({
+					url: '../php/pay_cart.php',
+					type: 'GET',
+					dataType: 'json',
+					data: {'c_user': username}
+				})
+				.done(function(res) {
+					for (var i = 0; i < res.length; i++) {
+						var pay_goodsData = res[i];
+						$('.pay_goods_name').text(pay_goodsData.c_g_name);
+					}
+				})
+				.fail(function() {
+					console.log("error");
+				});
+			})
+			.fail(function() {
+				console.log("error");
+			});
+
+		$('.payment_btn').on('click', function(event) {
+			event.preventDefault();
+			alert('支付成功，继续购物吧...');
+			window.location = '../index.html';
+		});
+	});
+</script>
+</html>

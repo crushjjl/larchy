@@ -1,0 +1,69 @@
+@charset "UTF-8";
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 20px 0; }
+  section .contact_content_wrapper {
+    width: 100%;
+    height: 700px;
+    background: url("../images/contactImg/contactBg.jpg") no-repeat;
+    background-size: cover; }
+    section .contact_content_wrapper .contact_content {
+      width: 1200px;
+      height: 680px;
+      margin: 0 auto; }
+      section .contact_content_wrapper .contact_content .contact_content_title {
+        width: 1200px;
+        height: 66px;
+        margin: 0 auto;
+        line-height: 66px; }
+        section .contact_content_wrapper .contact_content .contact_content_title a {
+          font-size: 16px;
+          color: #fff; }
+        section .contact_content_wrapper .contact_content .contact_content_title a:hover {
+          color: #c81623; }
+        section .contact_content_wrapper .contact_content .contact_content_title .tip_arrow {
+          color: #aaaaaa;
+          margin: 0px 2px; }
+      section .contact_content_wrapper .contact_content .contact_join {
+        width: 700px;
+        height: 420px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+        overflow: hidden;
+        overflow-y: auto;
+        background: #fff; }
+        section .contact_content_wrapper .contact_content .contact_join .contact_p_title {
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          border-bottom: 2px solid #000;
+          font-size: 24px;
+          margin-bottom: 20px;
+          font-family: '微软雅黑', Arial, Helvetica, sans-serif, '宋体'; }
+        section .contact_content_wrapper .contact_content .contact_join .contact_join_us {
+          text-align: center;
+          vertical-align: middle; }
+        section .contact_content_wrapper .contact_content .contact_join .contact_info h2 {
+          font-weight: bold;
+          color: #000000;
+          padding: 6% 0px 4% 0px;
+          font-family: "Palatino Linotype", "Book Antiqua", 'Palatino', 'serif'; }
+        section .contact_content_wrapper .contact_content .contact_join .contact_info a {
+          text-align: center;
+          color: #CCC;
+          font-size: 1.3em; }
+          section .contact_content_wrapper .contact_content .contact_join .contact_info a div {
+            background: #000000;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 6%; }
+        section .contact_content_wrapper .contact_content .contact_join .contact_info .contact_map {
+          margin: 10px 0; }
+
+/*# sourceMappingURL=contactus.css.map */

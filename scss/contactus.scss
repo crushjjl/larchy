@@ -1,0 +1,82 @@
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px 0;
+	.contact_content_wrapper{
+		width: 100%;
+		height: 700px;
+		background: url('../images/contactImg/contactBg.jpg') no-repeat;
+		background-size: cover;
+		.contact_content{
+			width: 1200px;
+			height: 680px;
+			margin: 0 auto;
+			.contact_content_title{
+				width: 1200px;
+				height: 66px;
+				margin: 0 auto;
+				line-height: 66px;
+				a{
+					font-size: 16px;
+					color: #fff;
+				}
+				a:hover{
+					color: #c81623;
+				}
+				.tip_arrow{
+					color: rgb(170, 170, 170);
+					margin: 0px 2px;
+				}
+			}
+			.contact_join{
+				width: 700px;
+				height: 420px;
+				margin: 0 auto;
+				border:1px solid #fff;
+				padding: 15px;
+				margin-top: 20px;
+				text-align: center;
+				overflow: hidden;
+				overflow-y: auto;
+				background: #fff;
+				.contact_p_title{
+			    	height: 50px;
+		    	    text-align: center;
+		    	    line-height: 50px;
+		    	    border-bottom: 2px solid #000;
+		    	    font-size: 24px;
+		    	    margin-bottom: 20px;
+		    	    font-family: '微软雅黑', Arial, Helvetica, sans-serif, '宋体';
+				}
+				.contact_join_us{
+					text-align: center;
+					vertical-align: middle;
+				}
+				.contact_info{
+					h2{
+						font-weight: bold;
+					    color: #000000;
+					    padding: 6% 0px 4% 0px;
+					    font-family: "Palatino Linotype", "Book Antiqua", 'Palatino', 'serif';
+					}
+					a{
+						text-align: center;
+						color: #CCC;
+						font-size: 1.3em;
+						div{
+							background: #000000;
+						    width: 100%;
+						    height: 30px;
+						    line-height: 30px;
+						    margin-bottom: 6%;
+						}
+					}
+					.contact_map{
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}

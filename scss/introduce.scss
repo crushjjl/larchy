@@ -1,0 +1,79 @@
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px 0;
+	.about_content{
+		width: 1200px;
+		height: 600px;
+		margin: 0 auto;
+		.about_content_title{
+			width: 1200px;
+			height: 66px;
+			margin: 0 auto;
+			line-height: 66px;
+			a{
+				font-size: 16px;
+				color: #000;
+			}
+			a:hover{
+				color: #c81623;
+			}
+			.tip_arrow{
+				color: rgb(170, 170, 170);
+				margin: 0px 2px;
+			}
+		}
+		.about_content_list{
+			width: 1200px;
+			height: 500px;
+			margin: 0 auto;
+			padding: 10px;
+			border:1px solid #111;
+		    overflow: hidden;
+		    overflow-y: auto;
+		    padding: 15px;
+		    text-align: center;
+		    .about_p_title{
+		    	height: 50px;
+	    	    text-align: center;
+	    	    line-height: 50px;
+	    	    border-bottom: 2px solid #686868;
+	    	    font-size: 24px;
+	    	    margin-bottom: 20px;
+		    }
+		    .about_c_show{
+		    	a{
+		    		img{
+		    			width: auto;
+		    			margin: 8px;
+		    		}
+		    	}
+		    	.about_c_world{
+		    		margin: 10px 0;
+		    		span{
+		    			font-size: 14pt;
+		    			font-weight: bold;
+		    			font-family: '黑体';
+		    			text-decoration: underline;
+		    		}
+		    	}
+		    	.about_c_txt{
+		    		width: 720px;
+		    		height: auto;
+		    		margin: 0 auto;
+		    		p{
+		    			font-size: 1.2em;
+	    			    color: rgb(0, 0, 0);
+	    			    line-height: 26px;
+	    			    letter-spacing: 2px;
+	    			    font-family: '宋体';
+	    			    padding: 10px 0;
+	    			    text-align: left;
+	    			    text-indent: 35px;
+		    		}
+		    	}
+		    }
+		}
+	}
+}

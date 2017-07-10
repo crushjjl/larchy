@@ -1,0 +1,17 @@
+/* header */
+header .header_logo {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  background: red;
+  position: relative; }
+  header .header_logo .larchy_logo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -22px; }
+
+/*# sourceMappingURL=index.css.map */

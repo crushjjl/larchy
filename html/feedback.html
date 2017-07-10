@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Message LaRchy</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/feedback.css">
+</head>
+<body>
+<!-- header -->
+<div id="Message_header"></div>
+<!-- content -->
+<section>
+	<div class="feedback_content_wrapper">
+		<div class="feedback_content">
+			<div class="feedback_content_title">
+				<a href="../index.html" title="">HOME</a>
+				<span class="tip_arrow">/</span>
+				<a href="#" title="">Message Larchy</a>
+			</div>
+			<div class="feedback_msg">
+				<div class="feedback_msg_title">
+					留言咨询
+				</div>
+				<div class="feedback_info">
+					<div class="msg_name">
+						<b>*</b><span>姓名</span><input type="text" id="msg_nameTxt" name="">
+					</div>
+					<div class="msg_email">
+						<b>*</b><span>电子邮件</span><input type="text" id="msg_emailTxt" name="">
+					</div>
+					<div class="msg_tel">
+						<b>*</b><span>联系电话</span><input type="text" id="msg_telTxt" name="">
+					</div>
+					<div class="msg_remarks">
+						<b>*</b><span>备注</span>
+						<textarea name="" id="msg_remarks" cols="50" rows="8"></textarea>
+					</div>
+					<div class="msg_identify_code">
+						<span>验证码</span>
+						<input type="text" id="msg_identify_codeTxt" name="">
+						<span class="indentify_code_info"><canvas width="100px" height="40px" id="mycanvas" ></canvas></span>
+					</div>
+					<div class="msg_btn">
+						<button type="submit" id="msg_submit">提交</button>
+						<button type="reset" id="msg_reset">重置</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<div id="Message_footer"></div>
+</body>
+<!-- js -->
+<script type="text/javascript" src='../lib/jquery/jquery-1.12.4.min.js'></script>
+<script type="text/javascript" src='../js/feedback.js'></script>
+</html>

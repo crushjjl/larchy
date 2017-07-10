@@ -1,0 +1,295 @@
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px 0;
+	.order_content{
+		width: 1200px;
+		height: auto;
+		min-height: 500px;
+		margin: 0 auto;
+		.order_content_title{
+			width: 100%;
+			height: 46px;
+			background: #f3f3f3;
+			box-sizing:border-box;
+			border:1px solid #ddd;
+			line-height: 46px;
+			text-indent: 15px;
+			h1{
+				color: #565656;
+				font-size: 18px;
+				font-family: "microsoft yahei";
+			}
+		}
+		.order_receiver_info{
+			width: 100%;
+			height: auto;
+			padding: 20px 0;
+			border:1px solid #ddd;
+			box-sizing:border-box;
+			h2{
+				font-size: 14px;
+				font-family: "microsoft yahei";
+				line-height: 46px;
+				text-indent: 20px;
+			}
+			.order_receiver_info_list{
+				width: 100%;
+				height: auto;
+				margin: 10px 0;
+				div{
+					margin: 20px 0;
+					padding-left: 50px;
+					label{
+						font-size: 14px;
+						color: #666;
+						margin-right: 10px;
+						span{
+							color: #ff5a00;
+						    font-size: 14px;
+						    margin: 0 5px;
+						}
+					}
+					input{
+						padding: 6px 10px;
+						height: 16px;
+						line-height: 16px;
+						color: #666;
+						border:1px solid #c7c7c7;
+						border-radius: 2px;
+					}
+				}
+				.order_receiver_address{
+					.address_info{
+						display: inline-block;
+						padding-left: 0;
+						margin: 0;
+					}
+				}
+				.order_remarks{
+					textarea{
+						vertical-align: top;
+					}
+				}
+				.save_receiver_info{
+					.confirm_receiver_info{
+						display: inline-block;
+						width: 100px;
+						height: 38px;
+						border:1px solid #f3f3f3;
+						background: rgb(231,179,37);
+						color: #fff;
+						text-align: center;
+						line-height: 38px;
+						font-weight: 600;
+						font-size: 14px;
+						margin: 0 20px 0 100px;
+					}
+					.confirm_receiver_info:hover{
+						opacity: .8;
+						filter: alpha(opacity=80);
+					}
+					.cancel_save_info{
+						display: inline-block;
+						width: 80px;
+						height: 38px;
+						border:1px solid #ddd;
+						color: #333;
+						text-align: center;
+						line-height: 38px;
+						font-weight: 700;
+						font-size: 14px;	
+					}
+					.cancel_save_info:hover{
+						border-color: #ec5051;
+						color: #E3170D;
+					}
+				}
+			}
+		}
+		.order_merchbill{
+			width: 100%;
+			height: auto;
+			min-height: 300px;
+			margin: 20px 0;
+			border:1px solid #ddd;
+			box-sizing:border-box;
+			.order_merchbill_title{
+				width: 100%;
+				height: 46px;
+				background: #f3f3f3;
+				box-sizing:border-box;
+				border:1px solid #ddd;
+				line-height: 46px;
+				text-indent: 15px;
+				h1{
+					color: #565656;
+					font-size: 18px;
+					font-family: "microsoft yahei";
+				}
+			}
+			.cart_content_items{
+				width: 100%;
+				height: 66px;
+				background: #fff4e8;
+				padding: 10px 0;
+				line-height: 66px;
+				border-top: 1px solid #ddd;
+				.car_content_items_list{
+					width: 100%;
+					overflow: hidden;
+					li{
+						float: left;
+						margin-left: 30px;
+						margin-right: 80px;
+						span{
+							font-size: 14px;
+							color: #333;
+						}
+					}
+					.car_items_goods{
+						margin-left: 100px;
+						margin-right: 160px;
+					}
+				}
+			}
+			.products_info{
+						width: 100%;
+						height: auto;
+						min-height: 110px;
+						margin-bottom:30px;
+						padding: 10px 0;
+						overflow: hidden;
+						.cart_goods_info_list{
+							width: 100%;
+							height: 110px;
+							overflow: hidden;
+							line-height: 110px;
+							border-bottom:1px solid #ddd;
+							background: #fff4e8;
+							li{
+								float: left;
+								margin-left: 30px;
+							}
+							.cart_pro_attr{
+								.cart_pro_attr_detail{
+									width: 380px;
+									height: 110px;
+									overflow: hidden;
+									a{
+										float: left;
+									}
+									a:hover{
+										color: #ec5051;
+									}
+									img{
+										width: 80px;
+										height: 80px;
+										vertical-align: middle;
+										margin: 0 10px;
+									}
+									.cart_goods_msg{
+									    float: left;
+								        width: 250px;
+								        height: 100px;
+								        overflow: hidden;
+								        white-space: nowrap;
+								        text-overflow:ellipsis;
+									}
+								}
+							}
+							.cart_pro_id{
+								margin-right: 30px;
+							}
+							.cart_pro_price{
+								margin-left: 90px;
+								margin-right: 72px;
+							}
+							.cart_pro_quantity{
+								width: 150px;
+								height: 110px;
+								margin-left: 0px;
+								.cart_quantity_revise{
+									.cart_goods_reduce,.cart_goods_increase{
+										width: 30px;
+									    height: 30px;
+									    background: #fff;
+									    border: 1px solid #181B2A;
+									    color: #333;
+									    border-radius: 3px;
+									    cursor: pointer;
+									}
+									.cart_goods_num{
+										width: 40px;
+									    height: 30px;
+									    text-align: center;
+									    border-radius: 3px;
+									    border: 1px solid #181B2A;
+									    outline: none;
+									    color: #181B2A;
+									}
+								}
+							}
+							.cart_pro_sum{
+								margin-right: 75px;
+								.cart_samll_sum{
+									color: #ec5051;
+									font-weight: bold;
+								}
+							}
+							.cart_pro_operate{
+								.cart_pro_delete:hover{
+									color: #ec5151;
+									text-decoration: underline;
+								}
+							}
+						}
+			}
+		}
+		.order_result{
+			width: 100%;
+			height: 66px;
+			line-height: 66px;
+			overflow: hidden;
+			margin-bottom: 50px;
+			border-bottom: 2px solid #aaa;
+			.return_cart{
+				float: left;
+				margin-left: 30px;
+			}
+			.return_cart:hover{
+				color: #E3170D;
+				text-decoration: underline;
+			}
+			.pay_amount{
+				float: left;
+				margin-left: 700px;
+				.pay_amount_money{
+					color: #ff4f7c;
+					font-weight: 700;
+					font-size: 26px;
+				}
+			}
+			.confirm_order{
+				float: right;
+				margin-right: 30px;
+				display: inline-block;
+				width: 180px;
+				height: 50px;
+				background: #d9534f;
+			    text-align: center;
+			    line-height: 50px;
+			    border: 1px solid #d43f3a;
+			    font-size: 22px;
+		        color: #fff;
+		        font-family: "microsoft yahei";
+		        font-weight: bold;
+			}
+			.confirm_order:hover{
+				opacity: .8;
+				filter: alpha(opacity=80);
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/* common.css */
+html, body, ul, li, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, a, div, span, i {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+img {
+  border: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "microsoft yahei"; }
+
+input {
+  border: 0; }
+
+/*# sourceMappingURL=common.css.map */

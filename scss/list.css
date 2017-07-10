@@ -1,0 +1,89 @@
+section {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  overflow: hidden; }
+  section .list_nav {
+    width: 1200px;
+    height: 68px;
+    background: #2b2b2b;
+    margin: 0 auto;
+    line-height: 68px;
+    border-radius: 3px; }
+    section .list_nav .list_nav_title {
+      width: 100%;
+      height: 66px;
+      overflow: hidden; }
+      section .list_nav .list_nav_title li {
+        float: left;
+        padding: 0 12px;
+        box-sizing: border-box; }
+        section .list_nav .list_nav_title li a {
+          font-size: 14px;
+          color: #ccc; }
+      section .list_nav .list_nav_title .list_nav_active {
+        color: #fff;
+        border-bottom: 2px solid #fff; }
+  section .list_product, section .list_product_classify {
+    width: 1200px;
+    height: auto;
+    min-height: 600px;
+    margin: 10px auto;
+    overflow: hidden; }
+    section .list_product .list_pro_show, section .list_product_classify .list_pro_show {
+      width: 100%;
+      overflow: hidden; }
+      section .list_product .list_pro_show li, section .list_product_classify .list_pro_show li {
+        float: left;
+        width: 222px;
+        border: 4px solid #fff;
+        padding: 5px;
+        text-align: center; }
+        section .list_product .list_pro_show li .list_pro_info .pro_img, section .list_product_classify .list_pro_show li .list_pro_info .pro_img {
+          text-align: center; }
+          section .list_product .list_pro_show li .list_pro_info .pro_img a, section .list_product_classify .list_pro_show li .list_pro_info .pro_img a {
+            display: inline-block;
+            width: 220px;
+            height: 320px;
+            overflow: hidden; }
+            section .list_product .list_pro_show li .list_pro_info .pro_img a img, section .list_product_classify .list_pro_show li .list_pro_info .pro_img a img {
+              width: 100%;
+              height: 100%; }
+        section .list_product .list_pro_show li .list_pro_info .pro_price, section .list_product_classify .list_pro_show li .list_pro_info .pro_price {
+          width: 100%;
+          height: 20px;
+          padding: 5px 0;
+          overflow: hidden;
+          line-height: 20px; }
+          section .list_product .list_pro_show li .list_pro_info .pro_price .pro_price_logo, section .list_product_classify .list_pro_show li .list_pro_info .pro_price .pro_price_logo {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ec5051;
+            float: left; }
+          section .list_product .list_pro_show li .list_pro_info .pro_price .pro_price_num, section .list_product_classify .list_pro_show li .list_pro_info .pro_price .pro_price_num {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ec5051;
+            float: left; }
+          section .list_product .list_pro_show li .list_pro_info .pro_price .pro_sales_logo, section .list_product_classify .list_pro_show li .list_pro_info .pro_price .pro_sales_logo, section .list_product .list_pro_show li .list_pro_info .pro_price .pro_sales_num, section .list_product_classify .list_pro_show li .list_pro_info .pro_price .pro_sales_num {
+            font-size: 14px;
+            color: #9fa0a0;
+            float: left;
+            margin-left: 70px; }
+          section .list_product .list_pro_show li .list_pro_info .pro_price .pro_sales_num, section .list_product_classify .list_pro_show li .list_pro_info .pro_price .pro_sales_num {
+            margin-left: 5px; }
+        section .list_product .list_pro_show li .list_pro_info .pro_name, section .list_product_classify .list_pro_show li .list_pro_info .pro_name {
+          width: 100%;
+          overflow: hidden;
+          text-align: left; }
+          section .list_product .list_pro_show li .list_pro_info .pro_name a:hover, section .list_product_classify .list_pro_show li .list_pro_info .pro_name a:hover {
+            color: #ec5051;
+            text-decoration: underline; }
+          section .list_product .list_pro_show li .list_pro_info .pro_name .pro_sales_id, section .list_product_classify .list_pro_show li .list_pro_info .pro_name .pro_sales_id {
+            display: none; }
+      section .list_product .list_pro_show li:hover, section .list_product_classify .list_pro_show li:hover {
+        border: 4px solid #bc0000; }
+  section .list_product_classify {
+    display: none; }
+
+/*# sourceMappingURL=list.css.map */

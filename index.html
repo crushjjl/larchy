@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LaRcHY</title>
+	<link rel="stylesheet" type="text/css" href="scss/common.css">
+	<link rel="stylesheet" type="text/css" href="lib/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="scss/index.css">
+</head>
+<body>
+<!-- header -->
+<header>
+	<div class="header_logo">
+		<div class="user">
+			<span class="user_logo"><img src="images/headerImg/User.png" alt="user_logo" title="user_logo"></span>
+			<a href="#" title="" class="signIn">登录</a>
+			<span>or</span>
+			<a href="#" title="" class="signUp">注册</a>
+		</div>
+		<a href="#"><img class="larchy_logo" src="images/headerImg/logo.png" alt="larchy" title="larchy"></a>
+		<div class="search">
+		<input type="text" name="" placeholder="Search" id="search_value">
+		<a href="#" title="" class="search_logo">
+			<img src="images/headerImg/search.png" alt="search_logo" title="search_logo">
+		</a>
+		</div>
+	</div>
+	<!-- sign in modal box -->
+	<div class="signIn_box">
+		<div class="signIn_content">
+			<div class="signIn_logo">
+				<a href="#" title=""><img src="images/headerImg/signIn_logo.png" alt="signIn_logo" title="signIn_logo"></a>
+				<h1>Sign in to LaRcHY</h1>
+			</div>
+			<div class="signIn_info">
+				<label for="login_field">Username or email address</label>
+				<input type="text" name="login" id="login_field" placeholder="Your name or Email Address">
+				<label for="login_password">
+				Password
+				<a href="#" title="" class="forgot_pwd">Forgot password?</a>
+				</label>
+				<input type="password" id="login_pwd" name="login_password" placeholder="Password">
+				<input type="submit" id="login_btn" name="commit" value="Sign in">
+			</div>
+			<div class="signIn_toregister">
+				<p>New to LaRcHY?<a href="#" title="" class="goToSignup">Go to Sign up.</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- sign up modal box -->
+	<div class="signUp_box">
+		<div class="signUp_content">
+			<div class="signUp_logo">
+				<a href="#" title=""><img src="images/headerImg/signIn_logo.png" alt="signIn_logo" title="signIn_logo"></a>
+				<h1>Welcome to LaRcHY</h1>
+			</div>
+			<div class="signUp_info">
+					<label for="register_name">
+					Username
+					<span class="unameError"></span>
+					</label>
+					<input type="text" name="register_name" id="register_name" placeholder="Your Name...">
+					<label for="register_email">
+					Email Address
+					<span class="uemailError"></span>
+					</label>
+					<input type="text" id="register_email" name="register_email" placeholder="Your Email Address...">
+					<label for="register_pwd">
+					Password
+					<span class="upwdError"></span>
+					</label>
+					<input type="password" id="register_pwd" name="register_pwd" placeholder="Your Password...">
+					<label for="confirm_pwd">
+					Confirm Password
+					<span class="upwd2Error"></span>
+					</label>
+					<input type="password" id="confirm_pwd" name="confirm_pwd" placeholder="Confirm password...">
+					<input type="submit" id="register_btn" name="commit" value="Sign up">
+			</div>
+			<div class="signUp_tips">
+				<p>Existing Account to LaRcHY?<a href="#" title="" class="goToSignin">Go to Sign in.</a></p>
+			</div>
+		</div>
+	</div>
+	</div>
+</header>
+
+<!-- content -->
+<section>
+<!-- navlist -->
+	<div class="nav">
+		<ul class="nav_list">
+			<li class="navList_li_active">
+			<a href="#">首页·HOME</a>
+			<div class="nav_list_second">
+				<a href="#">首页</a>
+				<a href="html/introduce.html">品牌</a>
+			</div>
+			</li>
+			<li><a href="html/advertise.html">广告·ADVERTISING</a>
+			<div class="nav_list_second">
+				<a href="html/advertise.html">Image List</a>
+				<a href="html/advertise.html">ADVERTISING Show</a>
+				<a href="#">Store</a>
+			</div>
+			</li>
+			<li><a href="html/list.html">新品·PRODUCTS</a>
+			<div class="nav_list_second">
+				<a href="#">Cold highland legend</a>
+				<a href="#">The two demension sports</a>
+				<a href="#">Song of ice and fire</a>
+				<a href="#" title="">The modern knight</a>
+				<a href="#">Pink Socotland</a>
+				<a href="#">Naughty interest group</a>
+				<a href="#" title="">Sportting party</a>
+			</div>
+			</li>
+			<li><a href="html/news.html">故事·STORY</a>
+			<div class="nav_list_second">
+				<a href="html/introduce.html">Miss LaRcHY</a>
+				<a href="html/introduce.html">le monde d'LARCHY</a>
+				<a href="html/introduce.html">About</a>
+			</div>
+			</li>
+			<li><a href="html/feedback.html">留言·WORDS</a>
+			<div class="nav_list_second">
+				<a href="#">To Say LARCHY</a>
+				<a href="#">LARCHY Listening</a>
+				<a href="#">Other</a>
+			</div>
+			</li>
+			<li><a href="html/introduce.html">LARCHY</a>
+			<div class="nav_list_second">
+				<a href="html/introduce.html">LARCHY</a>
+			</div>
+			</li>
+			<li><a href="html/contactus.html">加入我们·JOIN US</a>
+			<div class="nav_list_second">
+				<a href="html/contactus.html">Join Larchy</a>
+			</div>
+			</li>
+		</ul>
+	</div>
+<!-- banner -->
+	<div class="banner">
+		<ul class="banner_list">
+			<li style="display: block;"><a href="#"><img src="images/bannerImg/banner (1).jpg" alt="banner" title="banner"></a></li>
+			<li><a href="#"><img src="images/bannerImg/banner (2).jpg" alt="banner" title="banner"></a></li>
+			<li><a href="#"><img src="images/bannerImg/banner (3).jpg" alt="banner" title="banner"></a></li>
+			<li><a href="#"><img src="images/bannerImg/banner (12).jpg" alt="banner" title="banner"></a></li>
+			<li><a href="#"><img src="images/bannerImg/banner (10).jpg" alt="banner" title="banner"></a></li>
+		</ul>
+		<div id="pages"></div>
+		<div id="prev">&lt;</div>
+		<div id="next">&gt;</div>
+	</div>
+<!-- advertisement -->
+	<div class="advertisement">
+		<a href="#"><img class="advertise_1" src="images/bannerImg/advertise_1.jpg" alt="advertise" title="advertise"></a>
+	</div>
+<!-- classify -->
+	<div class="classify">
+		<div class="classify_item">
+			<ul class="classify_list">
+				<li><a href="#" class="classify_active">春季新品·Spring</a></li>
+				<li><a href="#">夏季热卖·Summer</a></li>
+				<li><a href="#">秋季畅销·Autumn</a></li>
+				<li><a href="#">冬季保暖·Winter</a></li>
+			</ul>
+		</div>
+		<!-- Spring -->
+		<div class="classify_content classify_content_flag">
+			<div class="classify_content_first">
+				<div class="classify_content_first_left">
+					<a href=""><img src="images/classifyImg/summer (1).jpg" alt="goods" title="goods"></a>
+				</div>
+				<div class="classify_content_first_center">
+					<ul class="classify_content_first_center_list">
+						<li><a href="#"><img src="images/classifyImg/summer (7).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/summer (8).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/summer (9).jpg" alt="goods" title="goods"></a></li>
+					</ul>
+					<!-- <div id="pagesClassify"></div> -->
+				</div>
+				<div class="classify_content_first_right">
+					<a href=""><img src="images/classifyImg/summer (2).jpg" alt="goods" title="goods"></a>
+				</div>
+			</div>
+			<div class="classify_content_second">
+				<ul class="classify_content_second_list">
+					<li><a href="#"><img src="images/classifyImg/summer (3).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/summer (4).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/summer (5).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/summer (6).jpg" alt="goods" title="goods"></a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- Summer -->
+		<div class="classify_content_else classify_content_flag">
+			<div class="classify_content_first">
+				<div class="classify_content_first_left">
+					<a href=""><img src="images/classifyImg/spring (1).jpg" alt="goods" title="goods"></a>
+				</div>
+				<div class="classify_content_first_center">
+					<ul class="classify_content_first_center_list">
+						<li><a href="#"><img src="images/classifyImg/spring (7).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/spring (8).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/spring (9).jpg" alt="goods" title="goods"></a></li>
+					</ul>
+					<!-- <div id="pagesClassify"></div> -->
+				</div>
+				<div class="classify_content_first_right">
+					<a href=""><img src="images/classifyImg/spring (2).jpg" alt="goods" title="goods"></a>
+				</div>
+			</div>
+			<div class="classify_content_second">
+				<ul class="classify_content_second_list">
+					<li><a href="#"><img src="images/classifyImg/spring (3).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/spring (4).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/spring (5).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/spring (6).jpg" alt="goods" title="goods"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Autumn -->
+		<div class="classify_content_else classify_content_flag">
+			<div class="classify_content_first">
+				<div class="classify_content_first_left">
+					<a href=""><img src="images/classifyImg/autumn (1).jpg" alt="goods" title="goods"></a>
+				</div>
+				<div class="classify_content_first_center">
+					<ul class="classify_content_first_center_list">
+						<li><a href="#"><img src="images/classifyImg/autumn (8).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/autumn (9).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/autumn (10).jpg" alt="goods" title="goods"></a></li>
+					</ul>
+					<!-- <div id="pagesClassify"></div> -->
+				</div>
+				<div class="classify_content_first_right">
+					<a href=""><img src="images/classifyImg/autumn (2).jpg" alt="goods" title="goods"></a>
+				</div>
+			</div>
+			<div class="classify_content_second">
+				<ul class="classify_content_second_list">
+					<li><a href="#"><img src="images/classifyImg/autumn (3).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/autumn (4).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/autumn (5).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/autumn (6).jpg" alt="goods" title="goods"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Winter -->
+		<div class="classify_content_else classify_content_flag">
+			<div class="classify_content_first">
+				<div class="classify_content_first_left">
+					<a href=""><img src="images/classifyImg/winter (1).jpg" alt="goods" title="goods"></a>
+				</div>
+				<div class="classify_content_first_center">
+					<ul class="classify_content_first_center_list">
+						<li><a href="#"><img src="images/classifyImg/winter (7).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/winter (8).jpg" alt="goods" title="goods"></a></li>
+						<li><a href="#"><img src="images/classifyImg/winter (9).jpg" alt="goods" title="goods"></a></li>
+					</ul>
+					<!-- <div id="pagesClassify"></div> -->
+				</div>
+				<div class="classify_content_first_right">
+					<a href=""><img src="images/classifyImg/winter (2).jpg" alt="goods" title="goods"></a>
+				</div>
+			</div>
+			<div class="classify_content_second">
+				<ul class="classify_content_second_list">
+					<li><a href="#"><img src="images/classifyImg/winter (3).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/winter (4).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/winter (5).jpg" alt="goods" title="goods"></a></li>
+					<li><a href="#"><img src="images/classifyImg/winter (6).jpg" alt="goods" title="goods"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- moreProducts -->
+	<div class="moreProducts">
+		<div class="moreProducts_title">更多产品·MORE PRODUCTS</div>
+		<div class="moreProducts_content">
+			<div class="swiper-container swiper-container-1">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (1).jpg" alt="products" title="products"></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (2).jpg" alt="products" title="products"></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (3).jpg" alt="products" title="products"></a>
+			        </div>
+			         <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (4).jpg" alt="products" title="products"></a>
+			        </div>
+			         <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (5).jpg" alt="products" title="products"></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (6).jpg" alt="products" title="products"></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#"><img src="images/moreProductsImg/products (7).jpg" alt="products" title="products"></a>
+			        </div>
+			    </div>
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev swiper-button-black"></div>
+			    <div class="swiper-button-next swiper-button-black"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<footer>
+	<!-- footer_title -->
+	<div class="footer_title">
+		<img src="images/footerImg/footer_larchy.jpg" alt="footer_larchy" title="footer_larchy">
+	</div>
+	<div class="footer_content">
+		<div class="footer_content_left">
+			<a href="#"><img class="footer_logo1" src="images/footerImg/footer_logo1.png" alt="footer_logo1" title="footer_logo1"></a>
+			<div class="footer_content_left_ad">
+				<div class="swiper-container swiper-container-2">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><a href="#"><img src="images/footerImg/footer_ad (1).jpg" alt="footer_ad" title="footer_ad"></a></div>
+				        <div class="swiper-slide"><a href="#"><img src="images/footerImg/footer_ad (2).jpg" alt="footer_ad" title="footer_ad"></a></div>
+				        <div class="swiper-slide"><a href="#"><img src="images/footerImg/footer_ad (3).jpg" alt="footer_ad" title="footer_ad"></a></div>
+				        <div class="swiper-slide"><a href="#"><img src="images/footerImg/footer_ad (4).jpg" alt="footer_ad" title="footer_ad"></a></div>
+				    </div>  
+				</div>	
+			</div>
+		</div>
+		<div class="footer_content_right">
+			<div class="footer_content_right_detail">
+				<div class="footer_content_right_top">
+					<ul class="footer_content_right_top_list">
+						<li><a href="html/contactus.html">联系我们</a></li>
+						<li><a href="html/introduce.html">精品选择</a></li>
+						<li><a href="html/contactus.html">加入我们</a></li>
+					</ul>
+				</div>
+				<div class="footer_content_right_middle">
+					<h3>FOLLOW LARCHY</h3>
+					<ul class="footer_content_right_middle_list">
+						<li><a href="#"><img src="images/footerImg/icon_f.png" alt="contact_logo" title="contact_logo"></a></li>
+						<li><a href="#"><img src="images/footerImg/icon_h.png" alt="contact_logo" title="contact_logo"></a></li>
+						<li><a href="#"><img src="images/footerImg/icon_weibo.png" alt="contact_logo" title="contact_logo"></a></li>
+						<li><a href="#"><img src="images/footerImg/icon_weixin.png" alt="contact_logo" title="contact_logo"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_copyright">
+		<p>Copyright &copy; 2017 LARCHY.All Rights Reserved.Design by_jjl.</p>
+	</div>
+</footer>
+<!-- backtoTop -->
+<div class="backtoTop">
+	<a href="javascript:void(0);" class="backtoTop_logo" title="">
+		<img src="images/headerImg/toTop.png" alt="toTop" title="toTop">
+	</a>
+</div>
+<!-- header_horizontal -->
+<div class="header_horizontal">
+	<div class="header_logo">
+		<a href="#"><img class="larchy_logo" src="images/headerImg/logo.png" alt="larchy" title="larchy"></a>
+		<div class="search">
+		<input type="text" name="" placeholder="Search" id="search_value">
+		<a href="#" title="" class="search_logo">
+			<img src="images/headerImg/search.png" alt="search_logo" title="search_logo">
+		</a>
+		</div>
+	</div>
+</div>
+<!-- js -->
+<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="lib/swiper/js/swiper-3.4.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

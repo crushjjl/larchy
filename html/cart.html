@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" type="text/css" href="../scss/common.css">
+	<link rel="stylesheet" type="text/css" href="../scss/cart.css">
+</head>
+<body>
+	<!-- header -->
+	<header id="cart_header"></header>
+	<!-- content -->
+	<section>
+	<div class="cart_content">
+		<div class="cart_content_title">
+			<a href="../index.html" title="">HOME</a>
+			<span class="tip_arrow">/</span>
+			<a href="#" title="">Shopping Cart</a>
+			<!-- <span class="tip_arrow">/</span> -->
+		</div>
+		<div class="cart_content_tip">
+			<h1>My Shopping Cart (&nbsp;<span class="cart_content_tip_num">0</span>&nbsp;)</h1>
+		</div>
+		<div class="cart_content_items">
+			<ul class="car_content_items_list">
+				<li class="cart_items_check">
+					<input type="checkbox" id="all_check" name="">
+					<span class="all_select">全选</span>
+				</li>
+				<li class="car_items_goods"><span class="car_items_attr">商品</span></li>
+				<li><span class="car_items_id">编号</span></li>
+				<li><span class="car_items_price">单价(元)</span></li>
+				<li><span class="car_items_quantity">数量</span></li>
+				<li><span class="car_items_sun">小计(元)</span></li>
+				<li><span class="car_items_opera">操作</span></li>
+			</ul>
+		</div>
+		<div class="cart_goods_info">
+			
+		</div>
+		<div class="cart_goods_result">
+			<ul class="cart_goods_result_list">
+				<li>
+					<input type="checkbox" id="cart_result_select" name="">
+					<span>全选</span>
+				</li>
+				<li class="cart_goods_result_del">
+					<a href="#" title="" class="cart_del_pitchon">删除选中商品</a>
+				</li>
+				<li class="cart_goods_result_opera_clear">
+					<a href="#" title="" class="cart_clear">清空购物车</a>
+				</li>
+				<li class="cart_result_count">
+					<span>共有<span class="cart_goods_count">0</span>款商品，总计：<span class="cart_goods_money_log">￥</span><span class="cart_goods_money">0.00</span></span>
+				</li>
+				<li class="cart_result_balance">
+					<a href="#" title="" class="cart_submitOrder">提交订单</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</section>
+	<!-- footer -->
+	<footer id="cart_footer"></footer>
+</body>
+<!-- js -->
+<script type="text/javascript" src="../lib/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/cart.js"></script>
+</html>

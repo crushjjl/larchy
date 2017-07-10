@@ -1,0 +1,101 @@
+@charset "UTF-8";
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 20px 0; }
+  section .feedback_content_wrapper {
+    width: 100%;
+    height: 720px;
+    background: url("../images/advertiseImg/imgList (1).jpg") no-repeat;
+    background-size: cover; }
+    section .feedback_content_wrapper .feedback_content {
+      width: 1200px;
+      height: 700px;
+      margin: 0 auto; }
+      section .feedback_content_wrapper .feedback_content .feedback_content_title {
+        width: 1200px;
+        height: 66px;
+        margin: 0 auto;
+        line-height: 66px; }
+        section .feedback_content_wrapper .feedback_content .feedback_content_title a {
+          font-size: 16px;
+          color: #2b2b2b; }
+        section .feedback_content_wrapper .feedback_content .feedback_content_title a:hover {
+          color: #c81623; }
+        section .feedback_content_wrapper .feedback_content .feedback_content_title .tip_arrow {
+          color: #aaaaaa;
+          margin: 0px 2px; }
+      section .feedback_content_wrapper .feedback_content .feedback_msg {
+        width: 620px;
+        height: 600px;
+        border: 1px solid #2b2b2b;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+        overflow: hidden;
+        overflow-y: auto;
+        background: #fff; }
+        section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_msg_title {
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          border-bottom: 2px solid #000;
+          font-size: 24px;
+          margin-bottom: 20px;
+          font-family: '微软雅黑', Arial, Helvetica, sans-serif, '宋体'; }
+        section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info {
+          width: 100%;
+          height: auto;
+          cursor: pointer;
+          overflow: hidden; }
+          section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info div {
+            width: auto;
+            height: auto;
+            margin: 15px 0 15px 35px;
+            text-align: left; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info div b {
+              color: red; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info div span {
+              font-size: 16px;
+              font-family: '微软雅黑', 'Arial', 'Helvetica', 'sans-serif', '宋体';
+              color: #666;
+              width: 80px;
+              padding-right: 25px;
+              display: inline-block;
+              text-align: right; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info div input {
+              padding: 6px 103px;
+              height: 16px;
+              line-height: 16px;
+              color: #666;
+              border: 1px solid #c7c7c7;
+              border-radius: 2px; }
+          section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_name {
+            padding-top: 20px; }
+          section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_remarks #msg_remarks {
+            vertical-align: top; }
+          section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_identify_code {
+            overflow: hidden;
+            position: relative; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_identify_code #msg_identify_codeTxt {
+              padding: 6px 10px;
+              height: 16px;
+              line-height: 16px;
+              color: #666;
+              border: 1px solid #c7c7c7;
+              border-radius: 2px; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_identify_code .indentify_code_info {
+              position: absolute;
+              margin-left: 20px; }
+          section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_btn {
+            text-align: center;
+            padding: 15px 0; }
+            section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_btn #msg_submit, section .feedback_content_wrapper .feedback_content .feedback_msg .feedback_info .msg_btn #msg_reset {
+              width: 100px;
+              height: 30px;
+              text-align: center;
+              font-size: 16px;
+              margin: 10px; }
+
+/*# sourceMappingURL=feedback.css.map */

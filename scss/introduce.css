@@ -1,0 +1,65 @@
+@charset "UTF-8";
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 20px 0; }
+  section .about_content {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto; }
+    section .about_content .about_content_title {
+      width: 1200px;
+      height: 66px;
+      margin: 0 auto;
+      line-height: 66px; }
+      section .about_content .about_content_title a {
+        font-size: 16px;
+        color: #000; }
+      section .about_content .about_content_title a:hover {
+        color: #c81623; }
+      section .about_content .about_content_title .tip_arrow {
+        color: #aaaaaa;
+        margin: 0px 2px; }
+    section .about_content .about_content_list {
+      width: 1200px;
+      height: 500px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #111;
+      overflow: hidden;
+      overflow-y: auto;
+      padding: 15px;
+      text-align: center; }
+      section .about_content .about_content_list .about_p_title {
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-bottom: 2px solid #686868;
+        font-size: 24px;
+        margin-bottom: 20px; }
+      section .about_content .about_content_list .about_c_show a img {
+        width: auto;
+        margin: 8px; }
+      section .about_content .about_content_list .about_c_show .about_c_world {
+        margin: 10px 0; }
+        section .about_content .about_content_list .about_c_show .about_c_world span {
+          font-size: 14pt;
+          font-weight: bold;
+          font-family: '黑体';
+          text-decoration: underline; }
+      section .about_content .about_content_list .about_c_show .about_c_txt {
+        width: 720px;
+        height: auto;
+        margin: 0 auto; }
+        section .about_content .about_content_list .about_c_show .about_c_txt p {
+          font-size: 1.2em;
+          color: black;
+          line-height: 26px;
+          letter-spacing: 2px;
+          font-family: '宋体';
+          padding: 10px 0;
+          text-align: left;
+          text-indent: 35px; }
+
+/*# sourceMappingURL=introduce.css.map */

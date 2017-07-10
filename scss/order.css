@@ -1,0 +1,237 @@
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 20px 0; }
+  section .order_content {
+    width: 1200px;
+    height: auto;
+    min-height: 500px;
+    margin: 0 auto; }
+    section .order_content .order_content_title {
+      width: 100%;
+      height: 46px;
+      background: #f3f3f3;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      line-height: 46px;
+      text-indent: 15px; }
+      section .order_content .order_content_title h1 {
+        color: #565656;
+        font-size: 18px;
+        font-family: "microsoft yahei"; }
+    section .order_content .order_receiver_info {
+      width: 100%;
+      height: auto;
+      padding: 20px 0;
+      border: 1px solid #ddd;
+      box-sizing: border-box; }
+      section .order_content .order_receiver_info h2 {
+        font-size: 14px;
+        font-family: "microsoft yahei";
+        line-height: 46px;
+        text-indent: 20px; }
+      section .order_content .order_receiver_info .order_receiver_info_list {
+        width: 100%;
+        height: auto;
+        margin: 10px 0; }
+        section .order_content .order_receiver_info .order_receiver_info_list div {
+          margin: 20px 0;
+          padding-left: 50px; }
+          section .order_content .order_receiver_info .order_receiver_info_list div label {
+            font-size: 14px;
+            color: #666;
+            margin-right: 10px; }
+            section .order_content .order_receiver_info .order_receiver_info_list div label span {
+              color: #ff5a00;
+              font-size: 14px;
+              margin: 0 5px; }
+          section .order_content .order_receiver_info .order_receiver_info_list div input {
+            padding: 6px 10px;
+            height: 16px;
+            line-height: 16px;
+            color: #666;
+            border: 1px solid #c7c7c7;
+            border-radius: 2px; }
+        section .order_content .order_receiver_info .order_receiver_info_list .order_receiver_address .address_info {
+          display: inline-block;
+          padding-left: 0;
+          margin: 0; }
+        section .order_content .order_receiver_info .order_receiver_info_list .order_remarks textarea {
+          vertical-align: top; }
+        section .order_content .order_receiver_info .order_receiver_info_list .save_receiver_info .confirm_receiver_info {
+          display: inline-block;
+          width: 100px;
+          height: 38px;
+          border: 1px solid #f3f3f3;
+          background: #e7b325;
+          color: #fff;
+          text-align: center;
+          line-height: 38px;
+          font-weight: 600;
+          font-size: 14px;
+          margin: 0 20px 0 100px; }
+        section .order_content .order_receiver_info .order_receiver_info_list .save_receiver_info .confirm_receiver_info:hover {
+          opacity: .8;
+          filter: alpha(opacity=80); }
+        section .order_content .order_receiver_info .order_receiver_info_list .save_receiver_info .cancel_save_info {
+          display: inline-block;
+          width: 80px;
+          height: 38px;
+          border: 1px solid #ddd;
+          color: #333;
+          text-align: center;
+          line-height: 38px;
+          font-weight: 700;
+          font-size: 14px; }
+        section .order_content .order_receiver_info .order_receiver_info_list .save_receiver_info .cancel_save_info:hover {
+          border-color: #ec5051;
+          color: #E3170D; }
+    section .order_content .order_merchbill {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      box-sizing: border-box; }
+      section .order_content .order_merchbill .order_merchbill_title {
+        width: 100%;
+        height: 46px;
+        background: #f3f3f3;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        line-height: 46px;
+        text-indent: 15px; }
+        section .order_content .order_merchbill .order_merchbill_title h1 {
+          color: #565656;
+          font-size: 18px;
+          font-family: "microsoft yahei"; }
+      section .order_content .order_merchbill .cart_content_items {
+        width: 100%;
+        height: 66px;
+        background: #fff4e8;
+        padding: 10px 0;
+        line-height: 66px;
+        border-top: 1px solid #ddd; }
+        section .order_content .order_merchbill .cart_content_items .car_content_items_list {
+          width: 100%;
+          overflow: hidden; }
+          section .order_content .order_merchbill .cart_content_items .car_content_items_list li {
+            float: left;
+            margin-left: 30px;
+            margin-right: 80px; }
+            section .order_content .order_merchbill .cart_content_items .car_content_items_list li span {
+              font-size: 14px;
+              color: #333; }
+          section .order_content .order_merchbill .cart_content_items .car_content_items_list .car_items_goods {
+            margin-left: 100px;
+            margin-right: 160px; }
+      section .order_content .order_merchbill .products_info {
+        width: 100%;
+        height: auto;
+        min-height: 110px;
+        margin-bottom: 30px;
+        padding: 10px 0;
+        overflow: hidden; }
+        section .order_content .order_merchbill .products_info .cart_goods_info_list {
+          width: 100%;
+          height: 110px;
+          overflow: hidden;
+          line-height: 110px;
+          border-bottom: 1px solid #ddd;
+          background: #fff4e8; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list li {
+            float: left;
+            margin-left: 30px; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_attr .cart_pro_attr_detail {
+            width: 380px;
+            height: 110px;
+            overflow: hidden; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_attr .cart_pro_attr_detail a {
+              float: left; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_attr .cart_pro_attr_detail a:hover {
+              color: #ec5051; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_attr .cart_pro_attr_detail img {
+              width: 80px;
+              height: 80px;
+              vertical-align: middle;
+              margin: 0 10px; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_attr .cart_pro_attr_detail .cart_goods_msg {
+              float: left;
+              width: 250px;
+              height: 100px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_id {
+            margin-right: 30px; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_price {
+            margin-left: 90px;
+            margin-right: 72px; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_quantity {
+            width: 150px;
+            height: 110px;
+            margin-left: 0px; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_quantity .cart_quantity_revise .cart_goods_reduce, section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_quantity .cart_quantity_revise .cart_goods_increase {
+              width: 30px;
+              height: 30px;
+              background: #fff;
+              border: 1px solid #181B2A;
+              color: #333;
+              border-radius: 3px;
+              cursor: pointer; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_quantity .cart_quantity_revise .cart_goods_num {
+              width: 40px;
+              height: 30px;
+              text-align: center;
+              border-radius: 3px;
+              border: 1px solid #181B2A;
+              outline: none;
+              color: #181B2A; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_sum {
+            margin-right: 75px; }
+            section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_sum .cart_samll_sum {
+              color: #ec5051;
+              font-weight: bold; }
+          section .order_content .order_merchbill .products_info .cart_goods_info_list .cart_pro_operate .cart_pro_delete:hover {
+            color: #ec5151;
+            text-decoration: underline; }
+    section .order_content .order_result {
+      width: 100%;
+      height: 66px;
+      line-height: 66px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      border-bottom: 2px solid #aaa; }
+      section .order_content .order_result .return_cart {
+        float: left;
+        margin-left: 30px; }
+      section .order_content .order_result .return_cart:hover {
+        color: #E3170D;
+        text-decoration: underline; }
+      section .order_content .order_result .pay_amount {
+        float: left;
+        margin-left: 700px; }
+        section .order_content .order_result .pay_amount .pay_amount_money {
+          color: #ff4f7c;
+          font-weight: 700;
+          font-size: 26px; }
+      section .order_content .order_result .confirm_order {
+        float: right;
+        margin-right: 30px;
+        display: inline-block;
+        width: 180px;
+        height: 50px;
+        background: #d9534f;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #d43f3a;
+        font-size: 22px;
+        color: #fff;
+        font-family: "microsoft yahei";
+        font-weight: bold; }
+      section .order_content .order_result .confirm_order:hover {
+        opacity: .8;
+        filter: alpha(opacity=80); }
+
+/*# sourceMappingURL=order.css.map */
